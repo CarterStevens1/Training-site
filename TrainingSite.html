@@ -15,14 +15,14 @@
     <br />
     <br />
     <p>
-       Firstly to discover your plan you will need to choose the following from the selected drop down tab.<br />
-       This will take you to the desired training page from there you can choose more detailed Goals.
+        Firstly to discover your plan you will need to choose the following from the selected drop down tab.<br />
+        This will take you to the desired training page from there you can choose more detailed Goals.
     </p>
     <form action="/Goal.php">
         <label for="Training type">What is your aim?</label>
-        <select name="Training type" id="Training type">
+        <select name="Training type" id="Training type" onchange="location= this.value";>
             <optgroup label="Training type">
-                <option value="Cut">Cut</option>
+                <option value="CutPage.html">Cut</option>
                 <option value="Bulk">Bulk</option>
                 <option value="Hypertrophy">Hypertrophy</option>
             </optgroup>
@@ -31,5 +31,19 @@
         <br>
         <input type="submit" value="Submit">
     </form>
+    <script>
+    $('#link').on('submit', function (e) {
+        e.preventDefault();
+        var $form = $(this),
+                $select = $form.find('select'),
+                links = $select.val();
+        if (links.length > 0) {
+            for (i in links) {
+                link = links[i];
+                window.open(link);
+            }
+        }
+    });
+    </script>
 </body>
 </html>
