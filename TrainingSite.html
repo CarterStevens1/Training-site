@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Training Plan</title>
+</head>
+<body>
+    <h1>Welcome to my training plan generator!</h1>
+
+    <p>
+        Hello, thank you for taking the time to view my site, <br />
+        this website will help you generate a training plan for your level of skill and availability aswell as what your goal is!
+    </p>
+    <br />
+    <br />
+    <p>
+       Firstly to discover your plan you will need to choose the following from the selected drop down tab.<br />
+       This will take you to the desired training page from there you can choose more detailed Goals.
+    </p>
+    <form action="/Goal.php">
+        <label for="Training type">What is your aim?</label>
+        <select name="Training type" id="Training type">
+            <optgroup label="Training type">
+                <option value="Cut">Cut</option>
+                <option value="Bulk">Bulk</option>
+                <option value="Hypertrophy">Hypertrophy</option>
+            </optgroup>
+        </select>
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
