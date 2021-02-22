@@ -26,3 +26,11 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
+
+$('.navTrigger').click(function () {
+    $(this).toggleClass('active');
+    console.log("Clicked menu");
+    $("#mainListDiv").toggleClass("show_list");
+    $("#mainListDiv").fadeIn();
+
+});

@@ -3,11 +3,36 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="TrainingCSS.css" />
+    <link rel="stylesheet" href="TrainingPageMain.css" />
+    <script type="text/javascript" src="TrainingJS.js"></script>
     <title>Training Plan</title>
+
 </head>
 <body>
-    <h1>Welcome to my training plan generator!</h1>
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#">Your Logo</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="contact.">Contact</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
 
+    <h1>Welcome to my training plan generator!</h1>
+    <br />
+    <br />
     <p>
         Hello, thank you for taking the time to view my site, <br />
         this website will help you generate a training plan for your level of skill and availability aswell as what your goal is!
@@ -18,32 +43,17 @@
         Firstly to discover your plan you will need to choose the following from the selected drop down tab.<br />
         This will take you to the desired training page from there you can choose more detailed Goals.
     </p>
-    <form action="/Goal.php">
-        <label for="Training type">What is your aim?</label>
-        <select name="Training type" id="Training type" onchange="location= this.value";>
-            <optgroup label="Training type">
-                <option value="CutPage.html">Cut</option>
-                <option value="Bulk">Bulk</option>
-                <option value="Hypertrophy">Hypertrophy</option>
-            </optgroup>
-        </select>
-        <br>
-        <br>
-        <input type="submit" value="Submit">
-    </form>
-    <script>
-    $('#link').on('submit', function (e) {
-        e.preventDefault();
-        var $form = $(this),
-                $select = $form.find('select'),
-                links = $select.val();
-        if (links.length > 0) {
-            for (i in links) {
-                link = links[i];
-                window.open(link);
-            }
-        }
-    });
-    </script>
+    <br />
+    <br />
+    <div class="dropdown">
+        <button class="dropbtn">Training Program</button>
+        <div class="dropdown-content">
+            <a href="file:///C:/Users/carte/source/repos/Training%20site/Bulkpage.html">Bulk</a>
+            <a href="file:///C:/Users/carte/source/repos/Training%20site/CutPage.html">Cut</a>
+            <a href="file:///C:/Users/carte/source/repos/Training%20site/HyperTrophyPage.html">Hypertrophy</a>
+        </div>
+    </div>
+    <br>
+    <br>
 </body>
 </html>
