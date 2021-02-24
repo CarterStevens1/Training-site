@@ -9,131 +9,49 @@
 </head>
 <body onload="Load()">
 
-    <div class="slideshow-container">
+    <p>
+        <button onclick="bulkParagraph()">Click here to change Training Plan</button>
+    </p>
 
-        <div class="mySlides">
-            <p>
-                BULK:<br>
-                MONDAY<br>
-                Compounds:<br>
-                Squats: 5x5: 5th set should be the same weight as last Friday's triple<br>
-                Bench Press: 5x5: 5th set should be the same weight as last Friday's triple<br>
-                Rows: 5x5: 5th set should be the same weight as last Friday's triple<br>
-                <br>
-                Assistance:<br>
-                Weighted hyperextensions: 2x8<br>
-                Weighted Sit-ups: 4x8<br>
-                <br>
-                <br>
-                WEDNESDAY<br>
-                Compounds:<br>
-                Squats: 4x5: First three sets are the same as Monday's. 4th set is the same weight as the third set<br>
-                Incline Bench/Military Press: 4x5: Increase weight 10-15% each set<br>
-                Deadlifts: 4x5: Increase weight 10-15% each set<br>
-                <br>
-                Assistance:<br>
-                Sit-ups: 3x25<br>
-                <br>
-                <br>
-                FRIDAY<br>
-                Compounds:<br>
-                Squats: 4x5(Same weight as Monday) + 1x3 (2.5% above the weight of Mondays last set) + 1x8 (Same weight as your third set)<br>
-                Bench: 4x5(Same weight as Monday) + 1x3 (2.5% above the weight of Mondays last set) + 1x8 (Same weight as your third set)<br>
-                Rows: 4x5(Same weight as Monday) + 1x3 (2.5% above the weight of Mondays last set) + 1x8 (Same weight as your third set)<br>
-                <br>
-                Assistance:<br>
-                Weighted Dips: 3x8<br>
-                Barbell Curls: 3x8<br>
-                Overhead tricep extensions: 3x8<br>
-            </p>
-            
-        </div>
-
-        <div class="mySlides">
-            <p>
-                Shoulders and Abs<br>
-                Shoulders<br>
-                Exercise	Sets	Reps<br>
-                Military Press	4	8-10<br>
-                Barbell Front Raise	3	10<br>
-                Upright Row	4	8<br>
-                Dumbbell Lateral Raise	4	8<br>
-                Dumbbell Reverse Fly	3	10<br>
-                Abs<br>
-                Exercise	Sets	Reps<br>
-                Decline Sit Ups	3	MAX<br>
-                Notes<br>
-                Dumbbell lateral raises can be supersetted with upright rows. Hold a weight plate on your chest for decline situps if bodyweight is not challenging enough.<br>
-                Arms and Abs<br>
-                Arms<br>
-                Exercise	Sets	Reps<br>
-                Standing Barbell Curl	4	8<br>
-                Preacher Curls	4	8<br>
-                Cable Curl	4	8<br>
-                Abs<br>
-                Close Grip Bench Press	4	6<br>
-                Tricep Dip	3	10+ (MAX)<br>
-                Lying Tricep Extension (skullcrusher)	4	8-10<br>
-                Forearms<br>
-                Barbell Wrist Curl	3	10<br>
-                Abs<br>
-                Exercise	Sets	Reps<br>
-                Hanging Leg Raise	3	MAX<br>
-                Notes<br>
-                None<br>
-                Legs and Abs<br>
-                Quads/Hamstrings/Glutes<br>
-                Exercise	Sets	Reps<br>
-                Squat	5	5-7<br>
-                45 Degree Leg Press	4	10<br>
-                Leg Extension	4	8-10<br>
-                Leg Curl	4	8-10<br>
-                Calves<br>
-                Exercise	Sets	Reps<br>
-                Seated calf Raise	4	12-15<br>
-                45 Degree Calf Press	4	10-12<br>
-                Abs<br>
-                Hover	3	As long as poss<br>
-                Notes<br>
-                Seated Calf Raise: You can do 15 bodyweight standing calf raises immediately after to add intensity.<br>
-                Back and Abs<br>
-                Back<br>
-                Exercise	Sets	Reps<br>
-                Wide Grip Pull Up	5	8-10<br>
-                Lat Pull Down	4	10<br>
-                Seated Row	4	10<br>
-                One Arm Dumbbell Row	3	8<br>
-                Abs<br>
-                Exercise	Sets	Reps<br>
-                Decline Abdominal Reach	3	MAX<br>
-                Notes<br>
-                Lat pull downs can be supersetted with seated row to add intensity.<br>
-                Friday - Chest and Abs<br>
-                Chest<br>
-                Exercise	Sets	Reps<br>
-                Barbell Bench Press	5	6-10<br>
-                Incline Bench Press	4	8<br>
-                Chest Dip	4	8<br>
-                Dumbbell Flys	4	10-12<br>
-                Abs<br>
-                Exercise	Sets	Reps<br>
-                Exercise Ball Crunch	3	20<br>
-                Notes<br>
-                Barbell Bench can be supersetted with Incline Dumbbell Flys. Dumbbell Flys: You can do these on either flat bench of incline depending on what part of the chest you want to hit.<br>
-                Saturday and Sunday - rest days<br>
-            </p>
-          
-        </div>
-
-
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
+    <div id="BulkPage">
+        BULK:<br>
+        MONDAY<br>
+        Compounds:<br>
+        Squats: 5x5: 5th set should be the same weight as last Friday's triple<br>
+        Bench Press: 5x5: 5th set should be the same weight as last Friday's triple<br>
+        Rows: 5x5: 5th set should be the same weight as last Friday's triple<br>
+        <br>
+        Assistance:<br>
+        Weighted hyperextensions: 2x8<br>
+        Weighted Sit-ups: 4x8<br>
+        <br>
+        <br>
+        WEDNESDAY<br>
+        Compounds:<br>
+        Squats: 4x5: First three sets are the same as Monday's. 4th set is the same weight as the third set<br>
+        Incline Bench/Military Press: 4x5: Increase weight 10-15% each set<br>
+        Deadlifts: 4x5: Increase weight 10-15% each set<br>
+        <br>
+        Assistance:<br>
+        Sit-ups: 3x25<br>
+        <br>
+        <br>
+        FRIDAY<br>
+        Compounds:<br>
+        Squats: 4x5(Same weight as Monday) + 1x3 (2.5% above the weight of Mondays last set) + 1x8 (Same weight as your third set)<br>
+        Bench: 4x5(Same weight as Monday) + 1x3 (2.5% above the weight of Mondays last set) + 1x8 (Same weight as your third set)<br>
+        Rows: 4x5(Same weight as Monday) + 1x3 (2.5% above the weight of Mondays last set) + 1x8 (Same weight as your third set)<br>
+        <br>
+        Assistance:<br>
+        Weighted Dips: 3x8<br>
+        Barbell Curls: 3x8<br>
+        Overhead tricep extensions: 3x8<br>
 
     </div>
 
-    <div class="dot-container">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-    </div>
+
+
+
+
 </body>
 </html>
