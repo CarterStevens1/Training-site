@@ -8,7 +8,7 @@ $('.navTrigger').click(function () {
 });
 function hypertrophyParagraph() {
     var Hypertrophy = document.getElementById("hypertrophy");
-    if (Hypertrophy.innerHTML = `Day 1<br>
+    if (Hypertrophy.innerHTML == `Day 1<br>
                 Exercise	Sets	Reps<br>
                 1. Squat	5	5<br>
                 2. Dumbbell Bench	4	10<br>
@@ -180,10 +180,10 @@ function hypertrophyParagraph() {
 
     }
     }
-
+//to fix
 function cutParagraph() {
     var cutpage = document.getElementById("Cutpage");
-    if (cutpage.innerHTML = `  It depends on how much fat you want to lose and your body composition. Keep in mind that you want to avoid muscle loss, which means that you don't want to rush things.<br>
+    if (cutpage.innerHTML == `It depends on how much fat you want to lose and your body composition. Keep in mind that you want to avoid muscle loss, which means that you don't want to rush things.<br>
                 <br>
                 Here are some common timelines you can follow for your cut:<br>
                 <br>
@@ -245,8 +245,7 @@ function cutParagraph() {
                 Burpee with a press up		10<br>
                 <br>
                 SUNDAY:<br>
-                REST DAY - Allow time for muscle recovery<br>
-`) {
+                REST DAY - Allow time for muscle recovery<br>`){
         cutpage.innerHTML = `<p>
                 Advanced Cutting Program<br>
                 <br>
@@ -374,7 +373,7 @@ function cutParagraph() {
                 Exercise	Sets	Reps<br>
                 Weighted Incline Crunches	4	20-25<br>
                 Hip Thrusts	4	20-25<br>
-            </p>`;
+                </p>`;
     }
     else {
         cutpage.innerHTML = `It depends on how much fat you want to lose and your body composition. Keep in mind that you want to avoid muscle loss, which means that you don't want to rush things.<br>
@@ -439,14 +438,13 @@ function cutParagraph() {
                 Burpee with a press up		10<br>
                 <br>
                 SUNDAY:<br>
-                REST DAY - Allow time for muscle recovery<br>
-`
+                REST DAY - Allow time for muscle recovery<br>`
     }
 }
 
 function bulkParagraph() {
     var bulkpage = document.getElementById("BulkPage");
-    if (bulkpage.innerHTML = ` BULK:<br>
+    if (bulkpage.innerHTML == ` BULK:<br>
                 MONDAY<br>
                 Compounds:<br>
                 Squats: 5x5: 5th set should be the same weight as last Friday's triple<br>
@@ -548,7 +546,7 @@ function bulkParagraph() {
                 Exercise Ball Crunch	3	20<br>
                 Notes<br>
                 Barbell Bench can be supersetted with Incline Dumbbell Flys. Dumbbell Flys: You can do these on either flat bench of incline depending on what part of the chest you want to hit.<br>
-                Saturday and Sunday - rest days<br>`
+                Saturday and Sunday - rest days<br>`;
     }
     else {
         bulkpage.innerHTML = ` BULK:<br>
