@@ -5,7 +5,6 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="TrainingCSS.css" />
     <link rel="stylesheet" href="TrainingPageMain.css" />
-    <script type="text/javascript" src="TrainingJS.js"></script>
     <title>Training Plan</title>
 
 </head>
@@ -48,17 +47,196 @@
     </p>
     <br />
     <br />
-    <div class="dropdown">
-        <button class="dropbtn">Training Program</button>
-        <div class="dropdown-content">
-            <a href="file:///C:/Users/carte/source/repos/Training%20site/Bulkpage.html">Bulk</a>
-            <a href="file:///C:/Users/carte/source/repos/Training%20site/CutPage.html">Cut</a>
-            <a href="file:///C:/Users/carte/source/repos/Training%20site/HyperTrophyPage.html">Hypertrophy</a>
-        </div>
+
+    <button class="hypertrophyModal">Hypertrophy Training Plan</button>
+    <button class="cutModal">Cut Training Plan</button>
+    <button class="bulkModal">Bulk Training Plan</button>
+
+    <div class="hyperTrophy hidden">
+        <button class="close-modal">&times;</button>
+        <h1 class="modalCaptions">Hypertophy Training Plan</h1>
+        <p class="modalCaptions">
+            Day 1<br>
+            Exercise	Sets	Reps<br>
+            1. Squat	5	5<br>
+            2. Dumbbell Bench	4	10<br>
+            3. Dumbbell Row	4	10<br>
+            4. Seated Dumbbell Press	4	10<br>
+            5. Lunge	4	10<br>
+            6. Dumbbell Curl	3	10<br>
+            7. Standing Barbell Tricep Extension	3	10<br>
+            8. Calf Raise	3	12<br>
+            9. Plank	5	20 secs<br>
+            <br>
+            <br>
+            Day 2<br>
+            Exercise	Sets	Reps<br>
+            1. Bench Press	5	5<br>
+            2. Machine Pec Deck	3	12<br>
+            3. Leg Extension	4	10<br>
+            4. Leg Curl	4	10<br>
+            5. Pullup	4	10<br>
+            6. Seated Lateral Raise	4	10<br>
+            7. Dumbbell Hammer Curls	3	10<br>
+            8. Rope Extension	3	10<br>
+            9. Plank	5	20 secs<br>
+            <br>
+            <br>
+            Day 3<br>
+            Exercise	Sets	Reps<br>
+            1. Deadlift	5	5<br>
+            2. Incline Dumbbell Press	4	10<br>
+            3. Lateral Raise	4	10<br>
+            4. Pulldown	4	10<br>
+            5. Leg Press	4	10<br>
+            6. EZ Bar Curl	3	10<br>
+            7. Skullcrushers	3	10<br>
+            8. Dumbbell Shrugs	3	12<br>
+            9. Plank	5	20 secs<br>
+        </p>
+
     </div>
+    <div class="overlay hidden"></div>
+    <div class="bulk hidden">
+        <button class="close-modal">&times;</button>
+        <h1 class="modalCaptions">Bulk Training Plan</h1>
+        <p class="modalCaptions">
+            <br />
+            MONDAY<br>
+            Compounds:<br>
+            Squats: 5x5: 5th set should be the same weight as last Friday's triple<br>
+            Bench Press: 5x5: 5th set should be the same weight as last Friday's triple<br>
+            Rows: 5x5: 5th set should be the same weight as last Friday's triple<br>
+            <br>
+            Assistance:<br>
+            Weighted hyperextensions: 2x8<br>
+            Weighted Sit-ups: 4x8<br>
+            <br>
+            <br>
+            WEDNESDAY<br>
+            Compounds:<br>
+            Squats: 4x5: First three sets are the same as Monday's. 4th set is the same weight as the third set<br>
+            Incline Bench/Military Press: 4x5: Increase weight 10-15% each set<br>
+            Deadlifts: 4x5: Increase weight 10-15% each set<br>
+            <br>
+            Assistance:<br>
+            Sit-ups: 3x25<br>
+            <br>
+            <br>
+            FRIDAY<br>
+            Compounds:<br>
+            Squats: 4x5(Same weight as Monday) + 1x3 (2.5% above the weight of Mondays last set) + 1x8 (Same weight as your third set)<br>
+            Bench: 4x5(Same weight as Monday) + 1x3 (2.5% above the weight of Mondays last set) + 1x8 (Same weight as your third set)<br>
+            Rows: 4x5(Same weight as Monday) + 1x3 (2.5% above the weight of Mondays last set) + 1x8 (Same weight as your third set)<br>
+            <br>
+            Assistance:<br>
+            Weighted Dips: 3x8<br>
+            Barbell Curls: 3x8<br>
+            Overhead tricep extensions: 3x8<br>
+
+
+        </p>
+
+    </div>
+    <div class="overlay hidden"></div>
+    <div class="cut hidden">
+        <button class="close-modal">&times;</button>
+        <h1 class="modalCaptions">Cut Training Plan</h1>
+        <p class="modalCaptions">
+           <p class="underline"> Monday - Chest and Triceps</p><br>
+            Exercise	Sets	Reps<br>
+            Dumbbell Bench Press*	4	8, 8, 6, 6<br>
+            Incline Bench Press*	4	8, 8, 6, 6<br>
+            Cable Crossovers	4	8<br>
+            Close Grip Bench Press	3	8<br>
+            Lying Tricep Extension	3	8<br>
+            Rope Pulldowns	3	8<br>
+            * Each week switch dumbbell bench press with barbell bench and incline bench with incline dumbbell press.<br>
+            <br>
+            <p class="underline"> Tuesday - Abs and Cardio</p><br>
+            20mins core strength exercises (see ab exercises section for core strength exercises), followed by 1 hour of low intensity cardio or 45mins of HIIT<br>
+            <br>
+            Wednesday - Back and Biceps<br>
+            Exercise	Sets	Reps<br>
+            Wide Grip Pull Up*	4	8 (slow)<br>
+            Close Grip Pull Down	4	8, 8, 6, 6<br>
+            Cable Row	4	8<br>
+            Barbell Curl	3	8, 8, 6<br>
+            Incline Bench Dumbbell Curl	3	8<br>
+            Dumbbell Preacher Curl	3	8<br>
+            *Finish sets off with slow negatives if you cannot do 8. If you can't do pullups, replace with heavy lat pull downs.<br>
+            <br>
+            <p class="underline">Thursday - Abs and Cardio</p><br>
+            20mins core strength exercises (see ab exercises section for core strength exercises), followed by 1 hour of low intensity cardio or 45mins of HIIT<br>
+            <br>
+            <p class="underline">Friday - Legs and Shoulders</p><br>
+            Exercise	Sets	Reps<br>
+            Squat	4	8<br>
+            Stiff Legged Deadlift	3	8<br>
+            Leg Curl	3	8, 8, 6<br>
+            Leg Extension	3	8, 8, 6<br>
+            Standing Calf Raise	4	15, 12, 10, 8<br>
+            Military Press	4	8, 8, 6, 6<br>
+            Dumbbell Lateral Raise	3	8<br>
+            Bent Over Rev Fly	3	8<br>
+        <br />
+           <p class="underline"> Saturday - Abs and Cardio</p><br>
+            20mins core strength exercises (see ab exercises section for core strength exercises), followed by 1 hour of low intensity cardio or 45mins of HIIT<br>
+        </p>
+
+    </div>
+    <div class="overlay hidden"></div>
+    <!-- <button class="show-hypertrophy">Hypertrophy Training Plan</button>
+     <button class="show-cut">Cut Training Plan</button>
+     <button class="show-bulk">Bulk Training Plan</button>
+     <div class="show-hypertrophyBox hidden">
+         <button class="close-modal">&times;</button>
+         <h1 class="modalCaptions">Hypertrophy Training Plan 1</h1>
+         <p>
+             Day 1<br>
+             Exercise	Sets	Reps<br>
+             1. Squat	5	5<br>
+             2. Dumbbell Bench	4	10<br>
+             3. Dumbbell Row	4	10<br>
+             4. Seated Dumbbell Press	4	10<br>
+             5. Lunge	4	10<br>
+             6. Dumbbell Curl	3	10<br>
+             7. Standing Barbell Tricep Extension	3	10<br>
+             8. Calf Raise	3	12<br>
+             9. Plank	5	20 secs<br>
+             <br>
+             <br>
+             Day 2<br>
+             Exercise	Sets	Reps<br>
+             1. Bench Press	5	5<br>
+             2. Machine Pec Deck	3	12<br>
+             3. Leg Extension	4	10<br>
+             4. Leg Curl	4	10<br>
+             5. Pullup	4	10<br>
+             6. Seated Lateral Raise	4	10<br>
+             7. Dumbbell Hammer Curls	3	10<br>
+             8. Rope Extension	3	10<br>
+             9. Plank	5	20 secs<br>
+             <br>
+             <br>
+             Day 3<br>
+             Exercise	Sets	Reps<br>
+             1. Deadlift	5	5<br>
+             2. Incline Dumbbell Press	4	10<br>
+             3. Lateral Raise	4	10<br>
+             4. Pulldown	4	10<br>
+             5. Leg Press	4	10<br>
+             6. EZ Bar Curl	3	10<br>
+             7. Skullcrushers	3	10<br>
+             8. Dumbbell Shrugs	3	12<br>
+             9. Plank	5	20 secs<br>
+         </p>
+     </div>
+     <div class="overlay hidden"></div>-->
+
     <br>
     <br>
-   
+
     <!--footer-->
     <div class="footer-basic">
         <footer>
@@ -71,16 +249,17 @@
                 <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
             </ul>
             <p class="copyright">Carter Training Plan's © 2018</p>
-        </footer>
-        <!-- Copyrights -->
-        <div class="bg-light py-4">
-            <div class="container text-center">
-                <p class="text-muted mb-0 py-2">© 2019 Bootstrapious All rights reserved.</p>
+
+            <!-- Copyrights -->
+            <div class="bg-light py-4">
+                <div class="container text-center">
+                    <p class="text-muted mb-0 py-2">© 2019 Bootstrapious All rights reserved.</p>
+                </div>
             </div>
-        </div>
         </footer>
     </div>
     <!-- End -->
 
+    <script src="TrainingJS.js"></script>
 </body>
 </html>
