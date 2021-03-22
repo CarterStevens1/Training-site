@@ -558,7 +558,7 @@ a {
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 70%;
+    width: 50%;
     background-color: white;
     padding: 4rem;
     border-radius: 100px;
@@ -571,7 +571,7 @@ a {
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 70%;
+    width: 50%;
     background-color: white;
     padding: 3rem;
     border-radius: 100px;
@@ -584,7 +584,7 @@ a {
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 70%;
+    width: 50%;
     background-color: white;
     padding: 4rem;
     border-radius: 100px;
@@ -597,8 +597,9 @@ a {
     top: 0;
     left: 0;
     width: 100%;
-    height: 150%;
+    height: 120%;
     background-color: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(3px);
     z-index: 5;
+    
 }
