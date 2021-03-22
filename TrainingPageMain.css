@@ -7,7 +7,8 @@ body {
     font-family: Verdana, sans-serif;
     margin: 0;
     text-align: center;
-    background-image: url("https://cdn.hipwallpaper.com/i/88/0/nCREB2.jpg");
+    background-image: url("https://www.craignicolfitness.com/wp-content/uploads/2019/01/Gym.png");
+    background-size: cover contain;
     color: white;
 }
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
@@ -35,6 +36,11 @@ p {
 /* Navbar section */
 a {
     font-size: 65%;
+}
+
+.trainingText {
+    text-align:left;
+    padding-left:10%;
 }
 
 .nav {
@@ -420,9 +426,10 @@ a {
 }
 
 .footer-basic {
+    margin-top: 6rem;
     padding: 40px 0;
-    background-color: #ffffff;
-    color: #4b4c4d;
+    background-color: transparent;
+    color: white;
 }
 
     .footer-basic ul {
@@ -479,36 +486,41 @@ a {
         margin-bottom: 0;
     }
 
+    .text_left {
+        text-align:left;
+        padding-left: 10%;
+    }
+
 .hypertrophyModal {
-    font-size: 2rem;
+
+    font-size: 1rem;
     font-weight: 600;
-    padding: 1.75rem 3.5rem;
-    margin: 5rem 2rem;
+    padding: 1rem 1rem;
     border: none;
-    background-color: #fff;
-    color: #444;
+    background-color: #00713a;
+    color: #f1f1f1;
     border-radius: 10rem;
     cursor: pointer;
 }
 .cutModal {
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 600;
-    padding: 1.75rem 3.5rem;
-    margin: 5rem 2rem;
+    padding: 1rem 1rem;
+    margin: 1rem 1rem;
     border: none;
-    background-color: #fff;
-    color: #444;
+    background-color: #00713a;
+    color: #f1f1f1;
     border-radius: 10rem;
     cursor: pointer;
 }
 .bulkModal {
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 600;
-    padding: 1.75rem 3.5rem;
-    margin: 5rem 2rem;
+    padding: 1rem 1rem;
+    margin: 2rem 1rem;
     border: none;
-    background-color: #fff;
-    color: #444;
+    background-color: #00713a;
+    color: #f1f1f1;
     border-radius: 10rem;
     cursor: pointer;
 }
@@ -522,10 +534,14 @@ a {
     cursor: pointer;
     border: none;
     background: none;
+    outline:none;
 }
 
 
 .modalCaptions {
+    padding: 0px;
+
+           
 }
 .underline {
     text-decoration:underline;
@@ -539,39 +555,39 @@ a {
 
 .hyperTrophy {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 70%;
     background-color: white;
-    padding: 6rem;
-    border-radius: 5px;
+    padding: 4rem;
+    border-radius: 100px;
     box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
     z-index: 10;
     color:black;
 }
 .bulk {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 70%;
     background-color: white;
-    padding: 6rem;
-    border-radius: 5px;
+    padding: 3rem;
+    border-radius: 100px;
     box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
     z-index: 10;
     color: black;
 }
 .cut{
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 70%;
     background-color: white;
-    padding: 6rem;
-    border-radius: 5px;
+    padding: 4rem;
+    border-radius: 100px;
     box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
     z-index: 10;
     color: black;
@@ -581,7 +597,7 @@ a {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 150%;
     background-color: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(3px);
     z-index: 5;
