@@ -18,7 +18,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Quicksand", sans-serif;  
+    font-family: 'Courier New', "Quicksand", sans-serif;  
    
 }
 p {
@@ -29,6 +29,13 @@ p {
     height: 60px;
     width: auto;
     border-radius : 10px;
+}
+
+.gymName {
+    text-decoration: none;
+    color: #00713a;
+    font-family:'Courier New';
+    font-size:60px;
 }
 /*-- Inspiration taken from abdo steif -->
 /* --> https://codepen.io/abdosteif/pen/bRoyMb?editors=1100*/
