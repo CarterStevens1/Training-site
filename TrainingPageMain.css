@@ -3,14 +3,7 @@
     text-decoration:underline;
 }
 
-body {
-    font-family: Verdana, sans-serif;
-    margin: 0;
-    text-align: center;
-    background-image: url("https://www.craignicolfitness.com/wp-content/uploads/2019/01/Gym.png");
-    background-size: cover contain;
-    color: white;
-}
+
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
 
 html,
@@ -18,8 +11,10 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Courier New', "Quicksand", sans-serif;  
-   
+    font-family: 'Courier New', "Quicksand", sans-serif;
+    background-image: url("https://www.craignicolfitness.com/wp-content/uploads/2019/01/Gym.png");
+    background-size: cover contain;
+    color: white;
 }
 p {
     font-size:large;
@@ -37,6 +32,9 @@ p {
     font-family:'Courier New';
     font-size:60px;
 }
+.gym {
+    color:white;
+}
 
 /* Navbar section */
 a {
@@ -49,7 +47,7 @@ a {
 }
 
 .nav {
-    width: 100%;
+
     height: 65px;
     position: static;
     line-height: 65px;
@@ -120,14 +118,18 @@ a.leftUnderline:before {
         height: 2px;
         bottom: 0;
         left: 0;
-        background-color: #FFF;
+        background-color: #00713a;
         visibility: hidden;
         transition: all 0.3s ease-in-out;
 }
 a.leftUnderline:hover:before {
     visibility: visible;
     width: 100%;
+
 }
+    a.leftUnderline:hover:after {
+        color:#FFF;
+    }
 
 
 /* Home section */
@@ -217,18 +219,20 @@ a.leftUnderline:hover:before {
     padding: 40px 0;
     background-color: transparent;
     color: white;
+    text-align:left;
+    padding-left:3%;
 }
 
-    .footer-basic ul {
+    .footer-basic  a {
         padding: 0;
         list-style: none;
-        text-align: center;
-        font-size: 18px;
-        line-height: 1.6;
+        text-align: left;
+        font-size: 14px;
+       
         margin-bottom: 0;
     }
 
-    .footer-basic li {
+    .footer-basic li a {
         padding: 0 10px;
     }
 
@@ -243,8 +247,9 @@ a.leftUnderline:hover:before {
         }
 
     .footer-basic .social {
-        text-align: center;
+        text-align: left;
         padding-bottom: 25px;
+        padding-left: 3%;
     }
 
         .footer-basic .social > a {
@@ -257,22 +262,31 @@ a.leftUnderline:hover:before {
             border-radius: 50%;
             border: 1px solid #ccc;
             margin: 0 8px;
-            color: inherit;
-            opacity: 0.75;
+            background-color: white;
+            
         }
 
             .footer-basic .social > a:hover {
                 opacity: 0.9;
             }
+.list-inline {
+    padding-left:3%;
+}
 
-    .footer-basic .copyright {
-        margin-top: 15px;
-        text-align: center;
-        font-size: 13px;
-        color: #aaa;
-        margin-bottom: 0;
-    }
 
+.footerLabels{
+    color:white;
+    text-decoration:none;
+   
+}
+.footerLabels:hover {
+  
+    text-decoration:underline;
+}
+.text-muted {
+    font-size:14px;
+    text-align:left;
+}
     .text_left {
         text-align:left;
         padding-left: 10%;
@@ -291,43 +305,69 @@ a.leftUnderline:hover:before {
         text-decoration:underline;
         font-weight:bold;
     }
+    .linebreak {
+        width:75%;
+    }
 
- 
+
 
 .hypertrophyModal {
-
     font-size: 1rem;
     font-weight: 600;
     padding: 1rem 1rem;
-    border: none;
-    background-color: #00713a;
     color: #f1f1f1;
     border-radius: 10rem;
     cursor: pointer;
+    background: linear-gradient(to right, #00713a 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    border: solid 2px #00713a;
+    outline:none;
+    
 }
+.hypertrophyModal:hover {
+    
+    background-position:left bottom;
+}
+
+
 .cutModal {
     font-size: 1rem;
     font-weight: 600;
     padding: 1rem 1rem;
     margin: 1rem 1rem;
-    border: none;
-    background-color: #00713a;
     color: #f1f1f1;
     border-radius: 10rem;
     cursor: pointer;
+    background: linear-gradient(to right, #00713a 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    border: solid 2px #00713a;
+    outline: none;
+}
+.cutModal:hover {
+    background-position: left bottom;
 }
 .bulkModal {
     font-size: 1rem;
     font-weight: 600;
     padding: 1rem 1rem;
     margin: 2rem 1rem;
-    border: none;
-    background-color: #00713a;
     color: #f1f1f1;
     border-radius: 10rem;
     cursor: pointer;
+    background: linear-gradient(to right, #00713a 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    border: solid 2px #00713a;
+    outline: none;
 }
-
+.bulkModal:hover {
+    background-position: left bottom;
+}
 .close-modal {
     position: absolute;
     top: 1.2rem;
@@ -375,7 +415,7 @@ a.leftUnderline:hover:before {
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 60%;
+    width: 40%;
     background-color: white;
     padding: 3rem;
     border-radius: 100px;
@@ -385,12 +425,12 @@ a.leftUnderline:hover:before {
 }
 .cut{
     position: absolute;
-    top: 60%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 50%;
     background-color: white;
-    padding: 4rem;
+    padding: 3rem;
     border-radius: 100px;
     box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
     z-index: 10;
@@ -406,4 +446,21 @@ a.leftUnderline:hover:before {
     backdrop-filter: blur(3px);
     z-index: 5;
     
+}
+
+.facebook {
+    background-image: url("images/fb.png");
+    background-size:contain;
+}
+.instagram {
+    background-image: url("images/instagram.png");
+    background-size: contain;
+}
+.twitter {
+    background-image: url("images/twitter.png");
+    background-size: contain;
+}
+.snapchat {
+    background-image: url("images/snapchat.png");
+    background-size: contain;
 }

@@ -28,11 +28,18 @@ input[type=submit] {
 /* Add a background color and some padding around the form */
 .container {
     border-radius: 5px;
-    background-color: black;
-    padding: 20px;
+    padding-top: 10%;
+    padding-right: 20%;
+    padding-left: 20%;
+    text-align: left;
 }
 
-body{
-    background-color: black;
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', "Quicksand", sans-serif;
+    background-image: url("https://www.craignicolfitness.com/wp-content/uploads/2019/01/Gym.png");
+    background-size: cover contain;
     color: white;
 }
