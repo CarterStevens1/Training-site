@@ -178,16 +178,16 @@ a.leftUnderline:hover:before {
         background-position: center top;
     }
 
-        .nav div.main_list ul li {
-            width: 100%;
-            text-align: right;
+    .nav div.main_list ul li {
+        width: 100%;
+        text-align: right;
         }
 
-            .nav div.main_list ul li a {
-                text-align: center;
-                width: 100%;
-                font-size: 3rem;
-                padding: 20px;
+    .nav div.main_list ul li a {
+        text-align: center;
+        width: 100%;
+        font-size: 3rem;
+        padding: 20px;
             }
 
     .nav div.media_button {
@@ -278,21 +278,21 @@ a.leftUnderline:hover:before {
 }
 
 
-    .Table {
-        text-align:left;
-        width:600px;
+.Table {
+    text-align:left;
+    width:600px;
     }
    
-    .blankRow {
-        height:10px;
-        background-color: white;
+.blankRow {
+    height:10px;
+    background-color: white;
     }
-    .tableTags {
-        text-decoration:underline;
-        font-weight:bold;
+.tableTags {
+    text-decoration:underline;
+    font-weight:bold;
     }
-    .linebreak {
-        width:75%;
+.linebreak {
+    width:75%;
     }
 
 
@@ -422,7 +422,7 @@ a.leftUnderline:hover:before {
     z-index: 10;
     color: black;
 }
-    .overlay {
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
