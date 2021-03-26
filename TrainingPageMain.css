@@ -11,7 +11,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Courier New', "Quicksand", sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     background-image: url("https://www.craignicolfitness.com/wp-content/uploads/2019/01/Gym.png");
     background-size: cover contain;
     color: white;
@@ -21,16 +21,16 @@ p {
 }
 
 .logo {
-    height: 60px;
+    height: 120px;
     width: auto;
-    border-radius : 10px;
+   
 }
 
-.gymName {
+.catchText {
+    padding-top:11%;
     text-decoration: none;
-    color: #098e3b;
     font-family: 'Audiowide';
-    font-size: 60px;
+    font-size: 45px;
 }
 .gym {
     color:white;
@@ -41,9 +41,9 @@ a {
     font-size: 65%;
 }
 
-.trainingText {
+.text_left {
     text-align:left;
-    padding-left:10%;
+    padding-left:7%;
 }
 
 .nav {
@@ -196,31 +196,20 @@ a.leftUnderline:hover:before {
 }
 
 
-.myH2 {
-    text-align: center;
-    font-size: 4rem;
-}
 
-.myP {
-    text-align: justify;
-    padding-left: 15%;
-    padding-right: 15%;
-    font-size: 20px;
-}
+
+
 
 @media all and (max-width:700px) {
-    .myP {
-        padding: 2%;
-    }
 }
 
 .footer-basic {
-    margin-top: 6rem;
-    padding: 40px 0;
+    margin-top: 12rem;
     background-color: transparent;
-    color: white;
-    text-align:left;
-    padding-left:3%;
+    color: #696868ed;
+    text-align: left;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
     .footer-basic  a {
@@ -247,7 +236,7 @@ a.leftUnderline:hover:before {
         }
 
     .footer-basic .social {
-        text-align: left;
+        float: right;
         padding-bottom: 25px;
         padding-left: 3%;
     }
@@ -274,10 +263,10 @@ a.leftUnderline:hover:before {
 }
 
 
-.footerLabels{
-    color:white;
-    text-decoration:none;
-   
+.footerLabels {
+    color: #696868ed;
+    text-decoration: none;
+    margin-right: 20px;
 }
 .footerLabels:hover {
   
@@ -287,10 +276,7 @@ a.leftUnderline:hover:before {
     font-size:14px;
     text-align:left;
 }
-    .text_left {
-        text-align:left;
-        padding-left: 10%;
-    }
+
 
     .Table {
         text-align:left;
@@ -383,9 +369,9 @@ a.leftUnderline:hover:before {
 
 .modalCaptions {
     padding: 0px;
-    text-align:left;
-
-           
+    text-align: center;
+    font-weight: 900;
+    font-family: 'Audiowide';
 }
 .underline {
     text-decoration:underline;
